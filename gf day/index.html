@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Girlfriend's Day ❤️</title>
+
+  <!-- Fonts & Libraries (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Gradient Background + Effects -->
+  <div class="bg-gradient"></div>
+  <div id="hearts-container"></div>
+  <div id="petals-container"></div>
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Music Control -->
+  <button id="music-btn" class="music-btn" aria-label="Play/Pause music">
+    <i class="fas fa-music"></i>
+  </button>
+  <!-- Replace the src with your own soft romantic track -->
+  <audio id="bg-music" loop>
+    <source src="music/Richy Mitch & The Coal Miners - Evergreen (Lyrics) - InvertOG (128k).mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content glass" data-aos="fade-up">
+      <!-- Circular Profile Photo – REPLACE src -->
+      <div class="profile-wrapper">
+        <img 
+          src="images/mainpfp.jpeg" 
+          alt="My Girlfriend❤️" 
+          class="profile-photo"
+        />
+        <!-- Comment: Replace the Unsplash URL above with your girlfriend's photo -->
+      </div>
+
+      <h1 class="hero-title">
+        <span id="typed-title"></span>
+      </h1>
+
+      <p class="appreciation" data-aos="fade-up" data-aos-delay="300">
+        <!-- REPLACE this message with your personal words -->
+        To the one who makes every ordinary day feel extraordinary —  
+        thank you for your smile, your patience, and the way you love me.  
+        You are my favorite person in the whole world.
+      </p>
+
+      <div class="hero-actions">
+        <button id="open-letter-btn" class="btn primary">
+          <i class="fas fa-envelope-open-text"></i> Read My Letter
+        </button>
+        <a href="#gallery" class="btn secondary">
+          <i class="fas fa-images"></i> Our Moments
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DAYS TOGETHER ========== -->
+  <section class="days-together glass-section" data-aos="fade-up">
+    <div class="container">
+      <h2><i class="fas fa-heart heartbeat"></i> Days Together</h2>
+      <!-- Replace the date below with the day you started dating -->
+      <div class="counter" id="days-counter">000</div>
+      <p class="counter-label">Beautiful days and counting...</p>
+    </div>
+  </section>
+
+  <!-- ========== LOVE LETTER (Modal) ========== -->
+  <div id="letter-modal" class="letter-modal">
+    <div class="letter-content glass">
+      <button class="close-letter" id="close-letter">&times;</button>
+      <h2>My Love Letter</h2>
+      <div class="letter-body">
+        <!-- REPLACE this entire letter with your own words -->
+        <p>My dearest,</p>
+        <p>
+          On this Girlfriend’s Day I wanted to put into words what my heart feels every single day.  
+          You are the calm in my chaos, the reason I smile at random moments, and the safest place I’ve ever known.
+        </p>
+        <p>
+          Thank you for choosing me, for laughing at my silly jokes, for holding my hand when the world feels heavy,  
+          and for being exactly who you are.
+        </p>
+        <p>
+          I fall more in love with you with every sunrise.  
+          Here’s to many more years of adventures, quiet evenings, and endless love.
+        </p>
+        <p class="signature">Forever yours,<br>❤️</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PHOTO GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <h2 data-aos="fade-up">Our Beautiful Moments</h2>
+      <div class="gallery" data-aos="fade-up" data-aos-delay="200">
+        <!-- REPLACE each src with your own photos -->
+        <div class="gallery-item">
+          <img src="images/together.jpeg" alt="Memory 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/together2.jpeg" alt="Memory 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/together3.jpeg" alt="Memory 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/together4.jpeg" alt="Memory 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/childhood.jpeg" alt="Memory 5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Made with <i class="fas fa-heart heartbeat"></i> just for you</p>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
